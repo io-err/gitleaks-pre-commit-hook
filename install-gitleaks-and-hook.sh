@@ -58,6 +58,7 @@ GITLEAKS_STATUS=\$(git config --bool hooks.gitleaks.enable)
 
 if [ "\$GITLEAKS_STATUS" = "false" ]; then
     echo "gitleaks disabled with 'git config', to enable it use 'git config hooks.gitleaks.enable true'"
+    exit 0
 fi
 
 # Run gitleaks
