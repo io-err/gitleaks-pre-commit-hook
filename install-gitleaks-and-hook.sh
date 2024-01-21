@@ -30,9 +30,9 @@ else
     exit 1
 fi
 
-# For some reason gitleaks devs specify x86_x64 as x64 in their releases, so we need to update target arch def
+# For some reason gitleaks devs specify x86_64 as x64 in their releases, so we need to update target arch def
 ARCH=$(uname -m)
-if [ "$ARCH" = "x86_x64" ]; then
+if [ "$ARCH" = "x86_64" ]; then
     ARCH="x64"
 # If for some reason you still have x32 OS :D
 elif [ "$ARCH" = "i386" ]; then
