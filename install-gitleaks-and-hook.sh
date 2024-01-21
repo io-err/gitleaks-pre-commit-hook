@@ -65,7 +65,7 @@ fi
 gitleaks protect -v --redact
 
 if [ \$? -gt 0 ]; then
-    echo "Leak found, commit cancelled, check gitleaks output log higher"
+    echo "Leak(s) found, commit cancelled, check gitleaks output log higher"
     exit 1
 fi
 
