@@ -62,7 +62,7 @@ if [ "\$GITLEAKS_STATUS" = "false" ]; then
 fi
 
 # Run gitleaks
-gitleaks protect -v --redact
+gitleaks protect -v --redact --staged
 
 if [ \$? -gt 0 ]; then
     echo "Leak(s) found, commit cancelled, check gitleaks output log higher"
